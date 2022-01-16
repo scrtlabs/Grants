@@ -102,7 +102,7 @@ The application should cover the following details:
 * Go-to-market and commercialization plan (if applicable)
 * Team: Please share all past experiences, github links and repos
 * Milestones and budget: Please provide a budget, development timelines for milestones and distribution of budget based on milestones.
-* 
+
 If you’d instead like to apply privately, please email info@scrtlabs.com with the above information.
 
 ### Evaluation process
