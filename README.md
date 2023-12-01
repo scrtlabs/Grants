@@ -1,8 +1,25 @@
 # Secret Grants
 This is the main repository for Secret Grant proposal submissions. This README provides a high level overview of Secret Grants. Please submit all Secret Grant requests by creating a new [issue](https://github.com/SecretFoundation/Grants/issues). Welcome!
+The updated Secret Grants program was announced on Dec 1 2023 - read the announcement here.
 
 ## Proposal Categories
-Grant proposals fall primarily into three categories: **Secret Apps**, for everything that is directly built on top of Secret Network; **Ecosystem**, for tools that expand Secret Network and improve general usability; and **Network improvements**, for major upgrades to the network itself. Please consult the below list of ideas we’ve recognized to date as being of special interest to the community and essential to ongoing ecosystem growth. That said, we welcome any and all proposals and recognize that the most interesting proposals may be things the Secret Network community has yet to consider. Innovation knows no bounds!
+Grant proposals fall primarily into fourthree categories:  **Privacy-as-a-Service**, for projects using Secret Privacy-as-a-Service features; **Secret Apps**, for everything that is directly built on top of Secret Network; **Ecosystem**, for tools that expand Secret Network and improve general usability; and **Network improvements**, for major upgrades to the network itself. Please consult the below list of ideas we’ve recognized to date as being of special interest to the community and essential to ongoing ecosystem growth. That said, we welcome any and all proposals and recognize that the most interesting proposals may be things the Secret Network community has yet to consider. Innovation knows no bounds!
+
+
+## Privacy-as-a-Service
+This category includes dApps that run on other blockchains and use Secret for confidential computation, storing of confidential data and the like.
+Possible use cases for such application include the following:
+* **Confidential Order Books**
+* **Confidential Voting**
+* **Sealed-bid Auctions**
+* **Confidential Payroll and Transfers**
+* **NFTs with locked content**
+* **Digital Identity**
+* **Private Key Backup**
+* **Gaming**
+
+Additional ideas for more use cases are also encouraged.
+
 
 ## Secret Apps
 
@@ -82,7 +99,7 @@ Funding amounts are variable and can go as high as several hundred thousand doll
 Grant awards will be distributed in 3 or more installments, with initial payment to take place right after approval of the grant. Teams are expected to define key milestones for the project and propose installment amount upon completion of different milestones.
 
 ### Requirements
-All code must be open source. If there’s a good reason to make an exception, please specify this in your proposal, and emphasize which parts (if any) will be open source. Please mention the license you plan to use in your application.
+All software projects developed using grant funds program must be released under a permissive open-source license, such as MIT, Apache 2.0, 2-Clause BSD or similar.
 
 ### Who are we looking for
 We are looking for individual developers, new and existing companies and projects, community members or established teams with a proven track record to contribute to the Secret Network ecosystem. Prior work on Secret Network or experience in deploying Ethereum or other blockchain applications is a big plus.
