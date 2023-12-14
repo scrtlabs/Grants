@@ -1,6 +1,7 @@
 # Secret Grants
 This is the main repository for Secret Grant proposal submissions. This README provides a high level overview of Secret Grants. Please submit all Secret Grant requests by creating a new [issue](https://github.com/SecretFoundation/Grants/issues). Welcome!
-The updated Secret Grants program was announced on Dec 1 2023 - read the announcement here.
+
+**The updated Secret Grants program was announced on Dec 1 2023 - Please read the [announcement](https://scrt.network/blog/scrt-labs-grants-program) carefully.**
 
 ## Proposal Categories
 Grant proposals fall primarily into fourthree categories:  **Privacy-as-a-Service**, for projects using Secret Privacy-as-a-Service features; **Secret Apps**, for everything that is directly built on top of Secret Network; **Ecosystem**, for tools that expand Secret Network and improve general usability; and **Network improvements**, for major upgrades to the network itself. Please consult the below list of ideas we’ve recognized to date as being of special interest to the community and essential to ongoing ecosystem growth. That said, we welcome any and all proposals and recognize that the most interesting proposals may be things the Secret Network community has yet to consider. Innovation knows no bounds!
@@ -10,13 +11,15 @@ Grant proposals fall primarily into fourthree categories:  **Privacy-as-a-Servic
 This category includes dApps that run on other blockchains and use Secret for confidential computation, storing of confidential data and the like.
 Possible use cases for such application include the following:
 * **Confidential Order Books**
-* **Confidential Voting**
+* **Confidential Voting** Use of additive HME to allow for user generated voting pools
 * **Sealed-bid Auctions**
 * **Confidential Payroll and Transfers**
 * **NFTs with locked content**
-* **Digital Identity**
-* **Private Key Backup**
+* **Digital Identity** Specifically on-chain credentials based on reputation of your private on-chain interactions
+* **Private Key Backup** Inheritance and Key storage using Private secret contracts
 * **Gaming**
+* **Usage of SecretVRF**
+* **MPC wallets or MPC usecases** Use a Secret contract as a signer within your distributed computation protocol - Wallets, MEV protection, privacy etc.
 
 Additional ideas for more use cases are also encouraged.
 
@@ -24,13 +27,15 @@ Additional ideas for more use cases are also encouraged.
 ## Secret Apps
 
 ### Secret DeFi
-Secret DeFi is a privacy-first, front-running resistant DeFi ecosystem. Its growth has seen the development of Secret Tokens (a fungible privacy token standard), crosschain mainnet bridges (including to ETH, BSC, Monero, and IBC networks like ATOM and LUNA), and multiple applications with over $1.3B in historical combined volume (SecretSwap, Sienna).
+Secret DeFi is a privacy-first, front-running resistant DeFi ecosystem. Its growth has seen the development of Secret Tokens (a fungible privacy token standard), crosschain mainnet bridges (including to ETHereum and Ethereum Layer2s (Axelar), Polkadot (Composable), Binance Smart chain (Axelar), Solana (wormhole), Cosmos - IBc (ATOM, TIA, dYdX, OSMO etc.). With live applications like Shade Protocol and their native stablecoin SILK there are multiple layers to build on top off.
 
 We welcome the community to submit grant proposals to build any of the applications below:
 
 * **Staking derivatives** to create capital efficiency in the Secret Network. Staking derivatives allow staked SCRT to be used for further yield opportunities in Secret DeFi. Here’s one attempt on a product roadmap.
+* **Liquidation engine integrations for Secret liqudity**
 * **Variable interest lending products:** Either Secret-based implementations of ETH DeFi projects such as Compound or Aave, or brand new lending products leveraging Secret’s unique properties.
 * **Algorithmic stable coin projects** (such as Maker-type implementations). We believe it’s critical for the Web3 ecosystem to have a decentralized stable coin with privacy.
+* **Managed/automated DeFi strategies**
 * **Dark pools (private orderbook exchange) for privacy preserving trading.** A Dark Pools secret contract manages the encrypted order book in its state and can run multiple order matching methods such as Market / Limit / Stop-Loss orders.
 * **Fixed income products:** Fixed interest lending / borrowing products with insurance / liquidity pool to guarantee fixed payments.
 * **Credit scoring and under collateralized lending** using liquidity / insurance pools and Secret Oracles that tap into Web2 data sources like Plaid or centralized exchange balances. Undercollateralized loans can be built on top of Secret Network using on-chain privacy-preserving reputation credit scoring contracts.
@@ -43,37 +48,29 @@ We welcome the community to submit grant proposals to build any of the applicati
 
 ### Secret Vaults
 * **Decentralized Substack:** Build a decentralized content (audio, blog) monetization tool for content stored on IPFS or another decentralized storage platforms. You can refer to this article for more information. Padlock and SecretVault contracts can also be an inspiration for access control related cases.
-* **Ocean Data Token integration:** Integrate Ocean Data Tokens to SecretVaults to allow trustless access to data token content.
 * **Dead Man Switch:** An event on the Secret Network (such as block numbers / elapsed time or a payment) triggers a secret contract to release a "secret" either to a selected recipient (private output) or the entire network (public state).
 
-Note: SecretVaults require whitelisted addresses to prevent offline data leakage attacks. Please get in touch with us to discuss secret contract security models. Here's a [repo](https://github.com/enigmampc/SecretNetwork/issues/29) and a [forum post](https://forum.scrt.network/t/product-idea-secret-market/2961) with active discussion.
-
 ### Data Marketplaces
-* [Trustless private computations](https://blog.oceanprotocol.com/ocean-and-secret-collaborating-on-access-control-and-private-compute-for-datatokens-1427acd1fcbe) for Ocean Protocol data marketplace
-* Crowd-sourced signal generation with staking incentives for SNIP20 and synthetic (Mirror Protocol) asset trading
-* Decentralized and privacy preserving machine learning use-cases (image recognition etc.)
+* Crowd-sourced signal generation with staking incentives for SNIP20 and synthetic asset trading
+* Decentralized and privacy preserving machine learning use-cases (image recognition, collaborative private model training etc.)
 
 ### Secret NFTs / Metaverse
-* Finalize SNIP-721 standard that allows for private ownership of NFTs and private metadata in NFTs **(complete!)**
-* Create SNIP-1155, based on ERC-1155 standard that allows for private ownership of NFTs and private metadata in NFTs
 * Secret Lootbox for SCRT / ETH / SOL / etc games: Lootbox NFTs used in games on Secret or other networks would be represented with SecretNFTs, revealing rewards only after NFT is claimed
+* p2p NFT lending
 
 ### Decentralized Governance and DAOs
 * **SecretFund:** Build a DAO funded by block rewards of delegators participating in the DAO. Delegators receive governance tokens proportional to their contribution. Governance tokens determine how the funds in SecretFund are managed.
-* **SecretLaunchPad:** Create a crowdfunding mechanism like Polkastarter, where Secret Network participant can support launch of products built on Secret Network or Ethereum (using the bridge). Using Secret Tokens, secretLaunchPad would allow anonymous investments.
 
 ## Ecosystem
 
 ### Interoperability
-* Secret Network - BTC Bridge **(complete!)**
-* Secret Network - Polkadot Bridge: Either building on Wormhole or a bridge to EVM substrates like Moonbeam or Plasm
+* Secret Network - Bridge to Monero, Bitcoin or other L1 using the Secret Private contracts to store private keys of the other chain.
 * SecretTunnel - Interoperable Secrets: Create a contract to verify state changes and allow asset transfers between Secret Network and L2 Secret Network forks for big data and high throughput use-cases.
 
 ### Oracles
 * Secret Oracles: Build TLS connection from validator enclaves to certain APIs to create private data feed for secret contracts (i.e. Binance and other exchange balances for decentralized credit scoring / leverage)
 * Public API oracles: Allow Secret Network validators (or nodes) to query public APIs for on-chain secret contract based oracle. Validators would reach on-chain consensus on inputs
-* Oracle support for Secret Network using Band Protocol **(complete!)**
-* Oracle support for Secret Network using Chainlink
+* Oracle support for Secret Network using Chainlink, Pyth, SupraOracles etc.
 
 ### Developer tools and improvements
 * Tooling for one-click-run-and-deploy of contracts (like Remix for Secret Contracts)
@@ -85,9 +82,11 @@ Note: SecretVaults require whitelisted addresses to prevent offline data leakage
 While we intend to share more details on these potential protocol-level improvements in future posts, here is a brief list of possibilities:
 
 * ML Library that can run on-chain (requires deterministic floats or fixed-point support)
+* MPC keys distributed across the validator set so to generate decryption keys (HME voting, External MEV protection etc.)
 * Differential privacy library for getter methods
 * Fully Homomorphic Encryption backend
-* Light-client validation inside of the enclave, in order to validate untrusted data (Bitcoin and Ethereum lite-clients etc.)
+* Gas/Fee abstraction methods
+* Modules to improve the usage of community funds and allows them to flow through Cosmos
 
 ## Grant Details
 
@@ -96,7 +95,7 @@ Please review the following details before applying:
 ### Funding amount
 Funding amounts are variable, depending on the complexity and value to the network, although the average grant would likely be in the order of thousands or tens of thousands of dollars. Grants may be split into several smaller milestones and receive funding accordingly on a per-milestone basis, as mentioned below. Since this is a non-dilutive funding opportunity, we encourage commercial projects to also look for alternative sources of funding as well. We are especially interested in seeing new start-up companies and projects emerge that build exclusively on Secret Network. For these in particular, non-dilutive funding such as a grant would be significant.
 
-Grant awards will be distributed in 3 or more installments, with initial payment to take place right after approval of the grant. Teams are expected to define key milestones for the project and propose installment amount upon completion of different milestones.
+Grant awards will be distributed in 3 or more installments, with initial payment to take place right after approval of the grant. Teams are expected to define key milestones for the project and propose installment amount upon completion of different milestones. It is important that the milestones relate to reaching PMF and/or significant adoption. Higer grants are awarded to projects reaching 
 
 ### Requirements
 All software projects developed using grant funds program must be released under a permissive open-source license, such as MIT, Apache 2.0, 2-Clause BSD or similar.
@@ -109,7 +108,7 @@ Secret Apps are encouraged to have a path for commercial sustainability (token o
 ### Recommended Process
 First, **ideation:** Use Secret Network developer forum and Secret Network Discord (#use-cases and #find-a-team channels) to brainstorm, discuss ideas and form teams. We encourage you to get feedback from the community (including the Enigma development and product team) before submitting any application.
 
-Then, **application:** When ready, submit an application via the [Grants area of the Secret Foundation GitHub repository](https://github.com/SecretFoundation/Grants/issues). Do this by opening a new issue in the format of [this sample application](https://github.com/SecretFoundation/Grants/blob/main/Sample%20grant%20application).
+Then, **application:** When ready, submit an application via the [Issue tab of this repository](https://github.com/Scrtlabs/Grants/issues). Do this by opening a new issue in the format of [this sample application](https://github.com/SecretFoundation/Grants/blob/main/Sample%20grant%20application).
 
 The application should cover the following details:
 
