@@ -10,16 +10,23 @@ We intend to create a staking derivatives on Secret Network. More implementation
 Our team has been closely following Ethereum DeFi and Secret Network in the last year, and are active in the chat channels. Needless to say, we are really excited to see this project evolve.
 
 ## Problem / Solution
+Example:
 SCRT staked to secure Secret Network cannot be used in Secret Network ecosystem, creating a capital inefficiency. Staking derivatives (dxSCRT) allows SCRT holders to...
 
 ## Detailed product description
+Example:
 The components of staking derivatives (dxSCRT) contract include a validator set module that determines validator participation, staking module which handles bonded tokens and liquidity pool.
 
 ## Go-to-Market plan
-As dxSCRT is a clear value proposition for existing SCRT holders, we hope to promote this effort within the Secret Network community
+Example:
+Using Metamask as a wallet and an outpost on the Polygon mainnet we hope to onboard external communities to use our Secret native dApp.
+XYZ industry has significan usage in ABC ecosystem and us launching on Secret will take a significant marketshare.
+We have an active web2 product audience we can push this additional Secret native feature too, that will be our largest market.
 
 ## Value capture for Secret Network ecosystem
+Example:
 The main KPIs for Secret Network is TVL (privacy value add to other blockchain ecosystems), number of transactions and number of user (for applications)
+This Grant will help attract additional developers to the ecosystem through XYZ
 
 ## Team members
 * John Smith
@@ -46,16 +53,18 @@ We've been a team for 2 years, and....
 * https://www.linkedin.com/<bob_>
 
 ## Development Roadmap
-We will require 3 months to complete this project. We intend to hav 2 developers full-time and 1 part-time, at a total cost of $X,000.
+Example:
+We will require 3 months to complete this project. We intend to have 2 developers full-time and 1 part-time, at a total cost of $X,000.
 
 Example milestones:
 * Implement X (weeks 0 - 4).
 * Implement Y (weeks 4 - 8).
 * Implement Z (weeks 8 - 12).
+* Reach A amount of users
+* Reach B amount of on-chain TXs
+* Reach C amount of Fees/Revenue
 
-Ideally, we can receive payments in 3 disbursements, one at the beginning of the grant, one after implementation of Y and last payment when the development work is completed.
-
-We would be willing to consider part payment in SCRTs, up to x%.
+Ideally, we can receive payments in 3 disbursements, one at the beginning of the grant, one after reaching mainnet and last payment when we reach the agreed upon KPI milestones.
 
 ## Additional Information
 N/A.
