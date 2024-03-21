@@ -3,6 +3,8 @@ This is the main repository for Secret Grant proposal submissions. This README p
 
 **The updated Secret Grants program was announced on Dec 1 2023 - Please read the [announcement](https://scrt.network/blog/scrt-labs-grants-program) carefully.**
 
+**The latest cohort - Q2 2024 - was announced [here[(https://scrt.network/blog/q224-grants-open/).** 
+
 ## Proposal Categories
 Grant proposals fall primarily into fourthree categories:  **Privacy-as-a-Service**, for projects using Secret Privacy-as-a-Service features; **Secret Apps**, for everything that is directly built on top of Secret Network; **Ecosystem**, for tools that expand Secret Network and improve general usability; and **Network improvements**, for major upgrades to the network itself. Please consult the below list of ideas we’ve recognized to date as being of special interest to the community and essential to ongoing ecosystem growth. That said, we welcome any and all proposals and recognize that the most interesting proposals may be things the Secret Network community has yet to consider. Innovation knows no bounds!
 
